@@ -159,9 +159,11 @@ Por ser 100% estático, este projeto pode ser hospedado gratuitamente e com depl
 
 ---
 
-##Autoria
+## Autoria
 
 Desenvolvido por **[Cibele Mesquita](https://github.com/cibelemesquita)**
+
+---
 
 ## 📄 Licença
 
