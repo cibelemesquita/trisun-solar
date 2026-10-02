@@ -159,6 +159,10 @@ Por ser 100% estático, este projeto pode ser hospedado gratuitamente e com depl
 
 ---
 
+##Autoria
+
+Desenvolvido por **[Cibele Mesquita](https://github.com/cibelemesquita)**
+
 ## 📄 Licença
 
 Todos os direitos reservados à **TRISUN Inteligência Solar** © 2026.
