@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>TRISUN Inteligência Solar | Energia Solar Fotovoltaica em São Paulo</title>
+  <meta name="description" content="Economize até 95% na sua conta de luz com painéis solares fotovoltaicos. TRISUN Inteligência Solar — projetos residenciais, homologação, manutenção, infraestrutura elétrica e carregadores para veículos elétricos em São Paulo." />
+  <meta name="keywords" content="energia solar São Paulo, painel solar residencial, fotovoltaico, economia conta de luz, carregador elétrico, TRISUN, Parque Jabaquara, manutenção painel solar, aumento de carga" />
+  <meta name="author" content="TRISUN Inteligência Solar" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="alternate icon" href="assets/images/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="TRISUN Inteligência Solar | Economize até 95% na Conta de Luz" />
+  <meta property="og:description" content="Projetos fotovoltaicos inteligentes e serviços elétricos residenciais de alta performance em São Paulo. Avaliação 4.4⭐ no Google." />
+  <meta property="og:image" content="assets/images/hero-bg.jpg" />
+  <meta property="og:url" content="https://trisunenergia.com.br" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TRISUN Inteligência Solar" />
+  <meta name="twitter:description" content="Economize até 95% na conta de luz com energia solar fotovoltaica em São Paulo." />
+  <meta name="twitter:image" content="assets/images/hero-bg.jpg" />
+
+  <!-- Schema Markup (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "TRISUN Inteligência Solar",
+    "description": "Empresa de energia solar fotovoltaica residencial, projetos elétricos e carregadores EV em São Paulo",
+    "url": "https://trisunenergia.com.br",
+    "telephone": "+55-11-92700-1485",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Arapuã, 195 - sala 2",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "04307-070",
+      "addressCountry": "BR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.4",
+      "reviewCount": "27"
+    },
+    "sameAs": ["https://www.instagram.com/trisunenergia/"]
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quanto posso economizar com energia solar na minha casa?",
+        "acceptedAnswer": { "@type": "Answer", "text": "É possível economizar até 95% do valor da sua fatura mensal de energia elétrica, pagando apenas a taxa mínima da concessionária." }
+      },
+      {
+        "@type": "Question",
+        "name": "Como funciona o financiamento solar?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Oferecemos financiamento bancário facilitado em até 84x e também financiamento direto. Em geral, o valor economizado na conta cobre a parcela do financiamento." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo dura um sistema de painéis solares?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Os painéis possuem vida útil superior a 25 anos com garantia de eficiência de fabricação." }
+      },
+      {
+        "@type": "Question",
+        "name": "A TRISUN também realiza serviços elétricos residenciais comuns?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sim! Além da energia fotovoltaica, realizamos adequação de quadros elétricos, aumento de carga, instalação de carregadores para carros elétricos e manutenção geral." }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#040F28', // Navy oficial do logo TRISUN
+              900: '#081432', // Fundo principal da página
+              850: '#0D1A3F', // Cards primários
+              800: '#142352', // Hover e bordas
+              700: '#1D306C',
+            },
+            solar: {
+              600: '#C2410C', // Cobre profundo
+              500: '#F25A13', // Laranja oficial do anel TRISUN
+              400: '#FF6F26', // Laranja vibrante
+              300: '#FFA166', // Luz solar suave
+              gold: '#FBBF24', // Dourado solar (estrelas / economia)
+              amber: '#F59E0B', // Âmbar solar
+            },
+            tech: {
+              600: '#1D4ED8',
+              500: '#2563EB', // Azul fotovoltaico tecnológico
+              400: '#3B82F6',
+              300: '#60A5FA',
+            },
+            eco: {
+              500: '#10B981', // Verde sustentabilidade / selos ecológicos
+              400: '#34D399',
+            }
+          },
+          fontFamily: {
+            display: ['Outfit', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          keyframes: {
+            'float': {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' },
+            },
+            'pulse-glow': {
+              '0%, 100%': { opacity: '0.6', transform: 'scale(1)' },
+              '50%': { opacity: '0.9', transform: 'scale(1.05)' },
+            }
+          },
+          animation: {
+            'float': 'float 4s ease-in-out infinite',
+            'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #081432;
+      color: #f8fafc;
+      overflow-x: hidden;
+    }
+
+    /* Scrollbar personalizada */
+    ::-webkit-scrollbar { width: 7px; }
+    ::-webkit-scrollbar-track { background: #040F28; }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #F25A13, #FBBF24);
+      border-radius: 10px;
+    }
+
+    /* Barra de progresso de rolagem */
+    #scroll-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background: linear-gradient(90deg, #F25A13, #FBBF24, #10B981);
+      z-index: 9999;
+      transition: width 0.1s ease-out;
+    }
+
+    /* Container do Logotipo Oficial - Fundo branco puro e neutro para máximo contraste sem ofuscar as cores originais */
+    .brand-logo-badge {
+      background: #ffffff;
+      border-radius: 1.15rem;
+      padding: 0.4rem 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      transition: all 0.25s ease;
+    }
+    .brand-logo-badge:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+    }
+
+    .brand-logo-badge-footer {
+      background: #ffffff;
+      border-radius: 1.25rem;
+      padding: 0.6rem 1.15rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      transition: all 0.25s ease;
+    }
+    .brand-logo-badge-footer:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Glassmorphism Cards */
+    .glass-card {
+      background: rgba(13, 26, 63, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    /* Animações de Scroll com JavaScript (Reveal) */
+    .reveal-item {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal-item.reveal-left {
+      transform: translateX(-40px);
+    }
+    .reveal-item.reveal-right {
+      transform: translateX(40px);
+    }
+    .reveal-item.reveal-scale {
+      transform: scale(0.92);
+    }
+    .reveal-item.visible {
+      opacity: 1;
+      transform: translateY(0) translateX(0) scale(1);
+    }
+
+    /* Lazy loading de imagens via JS */
+    .lazy-img {
+      opacity: 0;
+      filter: blur(10px);
+      transition: opacity 0.6s ease-in-out, filter 0.6s ease-in-out;
+    }
+    .lazy-img.loaded {
+      opacity: 1;
+      filter: blur(0px);
+    }
+
+    /* Navegação */
+    .nav-link {
+      position: relative;
+      color: rgba(248, 250, 252, 0.8);
+      transition: color 0.3s ease;
+      font-weight: 500;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #F25A13, #FBBF24);
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+    .nav-link:hover { color: #F25A13; }
+    .nav-link:hover::after { width: 100%; }
+
+    /* Botões */
+    .btn-primary {
+      background: linear-gradient(135deg, #F25A13 0%, #FF6F26 50%, #F59E0B 100%);
+      color: #fff;
+      font-weight: 700;
+      font-family: 'Outfit', sans-serif;
+      border-radius: 9999px;
+      padding: 0.875rem 2rem;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 20px rgba(242, 90, 19, 0.4);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      position: relative;
+      overflow: hidden;
+      min-height: 48px;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(242, 90, 19, 0.6);
+      filter: brightness(1.05);
+    }
+    .btn-primary:active { transform: translateY(0); }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+      font-weight: 600;
+      font-family: 'Outfit', sans-serif;
+      border-radius: 9999px;
+      padding: 0.875rem 2rem;
+      border: 1.5px solid rgba(255, 255, 255, 0.25);
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      backdrop-filter: blur(8px);
+      min-height: 48px;
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: #F25A13;
+      color: #FF6F26;
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      color: #fff;
+      font-weight: 700;
+      font-family: 'Outfit', sans-serif;
+      border-radius: 9999px;
+      padding: 0.875rem 2rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      min-height: 48px;
+    }
+    .btn-whatsapp:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(37, 211, 102, 0.55);
+    }
+
+    /* Cards de Serviços */
+    .service-card {
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(242, 90, 19, 0.2);
+      border-color: rgba(242, 90, 19, 0.4);
+    }
+
+    /* FAQ */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .faq-answer.open { max-height: 350px; }
+    .faq-icon { transition: transform 0.35s ease; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); color: #F25A13; }
+    .faq-item.open .faq-question { color: #F25A13; }
+
+    /* Upload Drag & Drop */
+    .upload-zone {
+      border: 2px dashed rgba(255, 255, 255, 0.25);
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .upload-zone:hover, .upload-zone.drag-over {
+      border-color: #F25A13;
+      background: rgba(242, 90, 19, 0.08);
+      box-shadow: 0 0 25px rgba(242, 90, 19, 0.15);
+    }
+
+    /* Inputs */
+    .form-input {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 14px;
+      color: #f8fafc;
+      transition: all 0.3s ease;
+      width: 100%;
+      padding: 0.95rem 1.25rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      min-height: 48px;
+    }
+    .form-input::placeholder { color: rgba(248, 250, 252, 0.4); }
+    .form-input:focus {
+      outline: none;
+      border-color: #F25A13;
+      background: rgba(255, 255, 255, 0.09);
+      box-shadow: 0 0 0 4px rgba(242, 90, 19, 0.2);
+    }
+
+    /* Badges e Labels */
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(242, 90, 19, 0.15);
+      border: 1px solid rgba(242, 90, 19, 0.3);
+      color: #FF6F26;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.45rem 1.15rem;
+      border-radius: 9999px;
+      margin-bottom: 1.25rem;
+    }
+    .eco-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #10B981;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.3rem 0.85rem;
+      border-radius: 9999px;
+    }
+
+    /* Botão flutuante do WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.12) rotate(5deg);
+      box-shadow: 0 10px 35px rgba(37, 211, 102, 0.7);
+    }
+    .whatsapp-float::before {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 2px solid #25D366;
+      animation: pulse-glow 2s infinite;
+      opacity: 0.7;
+    }
+
+    #mobile-menu {
+      transition: max-height 0.4s ease, opacity 0.3s ease;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+    #mobile-menu.open { max-height: 600px; opacity: 1; }
+
+    .stars { color: #FBBF24; letter-spacing: 2px; }
+    .section-divider {
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #F25A13, #FBBF24);
+      border-radius: 99px;
+      margin: 0 auto;
+    }
+
+    /* Fundo alternado */
+    .section-alt {
+      background: linear-gradient(180deg, #040F28 0%, #081432 100%);
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- BARRA DE PROGRESSO DE SCROLL -->
+  <div id="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a
+    href="https://wa.me/5511927001485?text=Ol%C3%A1!%20Gostaria%20de%20receber%20um%20estudo%20gratuito%20de%20energia%20solar."
+    target="_blank" rel="noopener noreferrer"
+    class="whatsapp-float" title="Falar no WhatsApp com a TRISUN" aria-label="Contato direto via WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- HEADER NAVEGAÇÃO -->
+  <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-3" style="background:rgba(8,20,50,0.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,0.08);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center justify-between min-h-[4.5rem]" role="navigation" aria-label="Menu principal">
+        
+        <!-- LOGOTIPO ORIGINAL TRISUN COM FUNDO NEUTRO INTELIGENTE -->
+        <a href="#inicio" class="flex-shrink-0 group py-1" aria-label="TRISUN Inteligência Solar - Início">
+          <div class="brand-logo-badge">
+            <img
+              src="assets/images/logo-trisun.png"
+              alt="Logo TRISUN Inteligência Solar"
+              class="h-16 sm:h-20 w-auto object-contain"
+              width="200" height="200"
+            />
+          </div>
+        </a>
+
+        <!-- LINKS DESKTOP -->
+        <div class="hidden lg:flex items-center gap-7">
+          <a href="#inicio" class="nav-link text-sm">Início</a>
+          <a href="#sobre" class="nav-link text-sm">Sobre</a>
+          <a href="#servicos" class="nav-link text-sm">Serviços</a>
+          <a href="#pagamento" class="nav-link text-sm">Financiamento</a>
+          <a href="#depoimentos" class="nav-link text-sm">Depoimentos</a>
+          <a href="#faq" class="nav-link text-sm">FAQ</a>
+          <a href="#contato" class="nav-link text-sm">Contato</a>
+        </div>
+
+        <!-- CTA HEADER -->
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="#contato" id="cta-nav" class="btn-primary text-sm py-2.5 px-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            Simular Economia
+          </a>
+        </div>
+
+        <!-- BOTÃO MOBILE MENU -->
+        <button
+          id="mobile-menu-btn"
+          class="lg:hidden p-3 rounded-xl text-white/80 hover:text-white hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-solar-500"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </nav>
+
+      <!-- MENU MOBILE -->
+      <div id="mobile-menu" class="lg:hidden border-t border-white/10 mt-3 pt-4 pb-6 space-y-3">
+        <a href="#inicio" class="block py-2.5 px-3 rounded-lg text-white/80 hover:text-white hover:bg-white/5 font-medium">Início</a>
+        <a href="#sobre" class="block py-2.5 px-3 rounded-lg text-white/80 hover:text-white hover:bg-white/5 font-medium">Sobre a TRISUN</a>
+        <a href="#servicos" class="block py-2.5 px-3 rounded-lg text-white/80 hover:text-white hover:bg-white/5 font-medium">Nossos Serviços</a>
+        <a href="#pagamento" class="block py-2.5 px-3 rounded-lg text-white/80 hover:text-white hover:bg-white/5 font-medium">Financiamento</a>
+        <a href="#depoimentos" class="block py-2.5 px-3 rounded-lg text-white/80 hover:text-white hover:bg-white/5 font-medium">Depoimentos</a>
+        <a href="#faq" class="block py-2.5 px-3 rounded-lg text-white/80 hover:text-white hover:bg-white/5 font-medium">Perguntas Frequentes</a>
+        <a href="#contato" class="block py-2.5 px-3 rounded-lg text-white/80 hover:text-white hover:bg-white/5 font-medium">Contato e Localização</a>
+        <div class="pt-3">
+          <a href="#contato" class="btn-primary w-full justify-center text-sm py-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            Simular Economia Agora
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden" aria-labelledby="hero-heading">
+      <!-- Imagem de Fundo com Lazy Loading e Overlay Inteligente -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="assets/images/hero-bg.jpg"
+          data-src="assets/images/hero-bg.jpg"
+          alt="Casa moderna com painéis solares ao entardecer dourado"
+          class="lazy-img w-full h-full object-cover object-center"
+          width="1920" height="1080"
+        />
+        <!-- Gradientes de profundidade: escurecem as laterais e o topo para garantir legibilidade dos textos e do badge -->
+        <div class="absolute inset-0 bg-gradient-to-r from-navy-950/95 via-navy-950/80 to-navy-900/60"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-navy-950/70"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Texto Hero -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <div class="reveal-item flex flex-wrap items-center gap-3">
+              <span class="section-label mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                Inteligência Solar &amp; Eficiência Energética
+              </span>
+              <span class="eco-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                São Paulo &amp; Região
+              </span>
+            </div>
+
+            <h1 id="hero-heading" class="reveal-item font-display font-black text-3xl sm:text-5xl lg:text-6xl leading-[1.12] tracking-tight">
+              Transforme a luz do sol em <span class="bg-gradient-to-r from-solar-500 via-solar-400 to-solar-gold bg-clip-text text-transparent">economia real</span> e ajude a preservar o futuro do planeta.
+            </h1>
+
+            <p class="reveal-item text-base sm:text-lg lg:text-xl text-white/75 max-w-2xl leading-relaxed">
+              Economize <strong class="text-white font-bold">até 95%</strong> na sua fatura com projetos fotovoltaicos inteligentes, homologação ágil e infraestrutura elétrica residencial de alta performance.
+            </p>
+
+            <!-- Gatilhos Mentais Integrados -->
+            <div class="reveal-item grid sm:grid-cols-2 gap-4 pt-2">
+              <div class="glass-card rounded-2xl p-4 flex items-center gap-3.5 border-l-4 border-l-solar-500">
+                <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 bg-solar-500/20 text-solar-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <div>
+                  <div class="font-display font-bold text-sm text-white">Economia Imediata</div>
+                  <div class="text-xs text-white/60">A parcela substitui sua conta de luz</div>
+                </div>
+              </div>
+
+              <div class="glass-card rounded-2xl p-4 flex items-center gap-3.5 border-l-4 border-l-eco-500">
+                <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 bg-eco-500/20 text-eco-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/></svg>
+                </div>
+                <div>
+                  <div class="font-display font-bold text-sm text-white">Preservação Ambiental</div>
+                  <div class="text-xs text-white/60">Energia limpa, 100% renovável e zero emissão</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTAs -->
+            <div class="reveal-item flex flex-col sm:flex-row gap-4 pt-4">
+              <a href="#contato" id="hero-cta-simular" class="btn-primary justify-center text-base">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                Quero Economizar Agora
+              </a>
+              <a href="https://wa.me/5511927001485?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20especialista%20da%20TRISUN." target="_blank" rel="noopener noreferrer" id="hero-cta-whatsapp" class="btn-whatsapp justify-center text-base">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Falar no WhatsApp
+              </a>
+            </div>
+
+            <!-- Prova Social no Hero -->
+            <div class="reveal-item flex items-center gap-3 pt-3">
+              <div class="flex text-solar-gold text-lg">★★★★★</div>
+              <span class="text-sm text-white/70">
+                <strong class="text-white">4.4 no Google</strong> (27 avaliações reais de clientes)
+              </span>
+            </div>
+
+          </div>
+
+          <!-- Card Flutuante Interativo (Simulador de Economia) -->
+          <div class="lg:col-span-5 reveal-item reveal-right">
+            <div class="glass-card rounded-3xl p-6 sm:p-8 border border-white/15 relative overflow-hidden shadow-2xl">
+              <div class="absolute -top-12 -right-12 w-40 h-40 bg-solar-500/20 rounded-full blur-3xl pointer-events-none"></div>
+              <div class="absolute -bottom-12 -left-12 w-40 h-40 bg-eco-500/20 rounded-full blur-3xl pointer-events-none"></div>
+              
+              <div class="flex items-center justify-between mb-6 pb-4 border-b border-white/10">
+                <div>
+                  <div class="text-xs uppercase tracking-wider text-solar-400 font-bold">Simulação Estimada</div>
+                  <h2 class="font-display font-bold text-xl text-white">Impacto na Conta de Luz</h2>
+                </div>
+                <span class="eco-badge">Até -95%</span>
+              </div>
+
+              <!-- Gráfico comparativo antes / depois -->
+              <div class="space-y-4 mb-6">
+                <div>
+                  <div class="flex justify-between text-xs text-white/60 mb-1.5">
+                    <span>Sem Energia Solar (Tarifa Convencional)</span>
+                    <span class="font-bold text-red-400">R$ 850,00/mês</span>
+                  </div>
+                  <div class="h-3.5 bg-white/10 rounded-full overflow-hidden">
+                    <div class="h-full bg-gradient-to-r from-red-500 to-rose-400 rounded-full w-full"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs text-white/60 mb-1.5">
+                    <span>Com TRISUN Inteligência Solar</span>
+                    <span class="font-bold text-eco-400">R$ 75,00/mês</span>
+                  </div>
+                  <div class="h-3.5 bg-white/10 rounded-full overflow-hidden">
+                    <div class="h-full bg-gradient-to-r from-eco-500 to-emerald-400 rounded-full w-[12%] animate-pulse"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-navy-950/70 rounded-2xl p-4 mb-6 border border-white/10">
+                <div class="text-xs text-white/50 mb-1">Economia estimada em 25 anos</div>
+                <div class="font-display font-black text-2xl sm:text-3xl text-solar-gold">
+                  + R$ 230.000,00
+                </div>
+                <div class="text-xs text-eco-400 mt-1 flex items-center gap-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                  Dinheiro que fica no seu bolso, não na concessionária
+                </div>
+              </div>
+
+              <a href="#contato" class="btn-primary w-full justify-center text-sm py-3.5">
+                Calcular Meu Projeto Grátis
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE A TRISUN COM CONTADORES ANIMADOS VIA JS -->
+    <section id="sobre" class="py-24 section-alt" aria-labelledby="sobre-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="section-label reveal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            Sobre a TRISUN
+          </div>
+          <h2 id="sobre-heading" class="reveal-item font-display font-black text-3xl sm:text-4xl lg:text-5xl mb-4">
+            Compromisso com <span class="text-solar-500">pontualidade</span>, excelência e superação de expectativas
+          </h2>
+          <p class="reveal-item text-white/60 text-base sm:text-lg leading-relaxed">
+            A TRISUN Inteligência Solar nasceu para descomplicar a transição energética das residências em São Paulo. Unimos engenharia de ponta, equipamentos certificados e atendimento de confiança do projeto inicial à homologação junto à concessionária.
+          </p>
+          <div class="section-divider mt-6 reveal-item"></div>
+        </div>
+
+        <!-- Estatísticas com Animação Numérica via JS -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-16">
+          
+          <div class="glass-card rounded-2xl p-6 text-center reveal-item border-t-2 border-t-solar-500">
+            <div class="font-display font-black text-4xl sm:text-5xl text-solar-500 mb-1 flex items-center justify-center">
+              <span>-</span><span class="count-up" data-target="95">0</span><span>%</span>
+            </div>
+            <div class="text-xs uppercase tracking-wider text-white/50 font-bold mb-1">Economia Máxima</div>
+            <div class="text-xs text-white/70">Na conta de energia residencial</div>
+          </div>
+
+          <div class="glass-card rounded-2xl p-6 text-center reveal-item border-t-2 border-t-solar-gold">
+            <div class="font-display font-black text-4xl sm:text-5xl text-solar-gold mb-1 flex items-center justify-center">
+              <span class="count-up" data-target="4.4" data-decimals="1">0</span><span>★</span>
+            </div>
+            <div class="text-xs uppercase tracking-wider text-white/50 font-bold mb-1">Google Reviews</div>
+            <div class="text-xs text-white/70">27 avaliações reais e verificadas</div>
+          </div>
+
+          <div class="glass-card rounded-2xl p-6 text-center reveal-item border-t-2 border-t-eco-500">
+            <div class="font-display font-black text-4xl sm:text-5xl text-eco-400 mb-1 flex items-center justify-center">
+              <span class="count-up" data-target="25">0</span><span>+</span>
+            </div>
+            <div class="text-xs uppercase tracking-wider text-white/50 font-bold mb-1">Anos de Vida Útil</div>
+            <div class="text-xs text-white/70">Com garantia de eficiência</div>
+          </div>
+
+          <div class="glass-card rounded-2xl p-6 text-center reveal-item border-t-2 border-t-tech-500">
+            <div class="font-display font-black text-4xl sm:text-5xl text-tech-400 mb-1 flex items-center justify-center">
+              <span>Até </span><span class="count-up" data-target="84">0</span><span>x</span>
+            </div>
+            <div class="text-xs uppercase tracking-wider text-white/50 font-bold mb-1">Parcelamento</div>
+            <div class="text-xs text-white/70">Facilitado via bancos ou direto</div>
+          </div>
+
+        </div>
+
+        <!-- 3 Pilares de Confiança -->
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass-card rounded-2xl p-7 reveal-item">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5 bg-solar-500/20 text-solar-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="font-display font-bold text-lg mb-2 text-white">Homologação 100% Garantida</h3>
+            <p class="text-white/60 text-sm leading-relaxed">Cuidamos de toda a burocracia de engenharia junto à concessionária de energia para aprovar seu sistema sem dores de cabeça.</p>
+          </div>
+
+          <div class="glass-card rounded-2xl p-7 reveal-item">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5 bg-eco-500/20 text-eco-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="font-display font-bold text-lg mb-2 text-white">Entrega no Prazo Rigoroso</h3>
+            <p class="text-white/60 text-sm leading-relaxed">Nossa equipe técnica cumpre o cronograma à risca. Planejamento minucioso para que sua geração solar comece o quanto antes.</p>
+          </div>
+
+          <div class="glass-card rounded-2xl p-7 reveal-item">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5 bg-tech-500/20 text-tech-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="font-display font-bold text-lg mb-2 text-white">Engenharia Especializada</h3>
+            <p class="text-white/60 text-sm leading-relaxed">Além de instalar painéis solares, adequamos todo o seu padrão de entrada e quadro de força residencial com técnicos qualificados.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NOSSOS SERVIÇOS (COM TODAS AS 5 IMAGENS TEMÁTICAS GERADAS) -->
+    <section id="servicos" class="py-24" aria-labelledby="servicos-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="section-label reveal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            Nossos Serviços
+          </div>
+          <h2 id="servicos-heading" class="reveal-item font-display font-black text-3xl sm:text-4xl lg:text-5xl mb-4">
+            Soluções completas em energia solar e <span class="text-solar-500">eficiência elétrica</span>
+          </h2>
+          <p class="reveal-item text-white/60 text-base sm:text-lg">
+            Do projeto fotovoltaico à infraestrutura predial: alta tecnologia para sua casa ou empresa.
+          </p>
+          <div class="section-divider mt-6 reveal-item"></div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          
+          <!-- Card 1: Sistemas Fotovoltaicos Residenciais -->
+          <div class="service-card glass-card rounded-3xl overflow-hidden reveal-item flex flex-col">
+            <div class="h-52 overflow-hidden relative group">
+              <img
+                src="assets/images/solar-install.jpg"
+                data-src="assets/images/solar-install.jpg"
+                alt="Técnico instalando painéis solares em telhado residencial"
+                class="lazy-img w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                width="400" height="250"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+              <div class="absolute bottom-3 left-4">
+                <span class="eco-badge text-xs">On-Grid &amp; Off-Grid</span>
+              </div>
+            </div>
+            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-solar-500/20 text-solar-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                </div>
+                <h3 class="font-display font-bold text-xl mb-2 text-white">Sistemas Fotovoltaicos Residenciais</h3>
+                <p class="text-white/60 text-sm leading-relaxed">
+                  Dimensionamento preciso, projeto de engenharia, homologação completa junto à distribuidora e instalação de módulos solares de alto rendimento.
+                </p>
+              </div>
+              <div class="pt-5 mt-5 border-t border-white/10 flex items-center justify-between text-xs text-solar-400 font-semibold">
+                <span>Economia de até 95%</span>
+                <span>Projetos Sob Medida →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Manutenção e Limpeza de Painéis (Manutenção Especializada) -->
+          <div class="service-card glass-card rounded-3xl overflow-hidden reveal-item flex flex-col">
+            <div class="h-52 overflow-hidden relative group">
+              <img
+                src="assets/images/solar-maintenance.jpg"
+                data-src="assets/images/solar-maintenance.jpg"
+                alt="Técnico realizando manutenção especializada e limpeza de painéis solares"
+                class="lazy-img w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                width="400" height="250"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+              <div class="absolute bottom-3 left-4">
+                <span class="eco-badge text-xs">Manutenção Especializada</span>
+              </div>
+            </div>
+            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-solar-gold/20 text-solar-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                </div>
+                <h3 class="font-display font-bold text-xl mb-2 text-white">Manutenção e Limpeza de Painéis</h3>
+                <p class="text-white/60 text-sm leading-relaxed">
+                  Limpeza técnica periódica e manutenção preventiva/corretiva com equipamentos próprios para garantir máxima captação de irradiação solar e longevidade.
+                </p>
+              </div>
+              <div class="pt-5 mt-5 border-t border-white/10 flex items-center justify-between text-xs text-solar-gold font-semibold">
+                <span>Recuperação de Rendimento</span>
+                <span>Inspeção Periódica →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Projetos e Aumentos de Carga (Infraestrutura Elétrica) -->
+          <div class="service-card glass-card rounded-3xl overflow-hidden reveal-item flex flex-col">
+            <div class="h-52 overflow-hidden relative group">
+              <img
+                src="assets/images/electrical-infra.jpg"
+                data-src="assets/images/electrical-infra.jpg"
+                alt="Eletricista profissional trabalhando em quadro elétrico residencial moderno"
+                class="lazy-img w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                width="400" height="250"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+              <div class="absolute bottom-3 left-4">
+                <span class="eco-badge text-xs">Infraestrutura Elétrica</span>
+              </div>
+            </div>
+            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-tech-500/20 text-tech-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <h3 class="font-display font-bold text-xl mb-2 text-white">Projetos e Aumentos de Carga</h3>
+                <p class="text-white/60 text-sm leading-relaxed">
+                  Adequação completa de padrão de entrada de energia, modernização de quadros de distribuição (QDC) e reforço de cabeamento para suportar novas cargas.
+                </p>
+              </div>
+              <div class="pt-5 mt-5 border-t border-white/10 flex items-center justify-between text-xs text-tech-400 font-semibold">
+                <span>Normas NBR 5410</span>
+                <span>Segurança Total →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Carregadores para Veículos Elétricos -->
+          <div class="service-card glass-card rounded-3xl overflow-hidden reveal-item flex flex-col">
+            <div class="h-52 overflow-hidden relative group">
+              <img
+                src="assets/images/ev-charger.jpg"
+                data-src="assets/images/ev-charger.jpg"
+                alt="Carregador Wallbox para veículo elétrico instalado em garagem moderna"
+                class="lazy-img w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                width="400" height="250"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+              <div class="absolute bottom-3 left-4">
+                <span class="eco-badge text-xs">Wallbox Residencial</span>
+              </div>
+            </div>
+            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-eco-500/20 text-eco-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect x="9" y="11" width="14" height="10" rx="2"/><circle cx="12" cy="16" r="1"/><path d="M22 12h-4l-2 5 2-9"/></svg>
+                </div>
+                <h3 class="font-display font-bold text-xl mb-2 text-white">Carregadores para Veículos Elétricos</h3>
+                <p class="text-white/60 text-sm leading-relaxed">
+                  Infraestrutura dedicada para recarga segura de carros elétricos (EV) e híbridos plug-in com Wallbox inteligente integrado à geração solar da sua casa.
+                </p>
+              </div>
+              <div class="pt-5 mt-5 border-t border-white/10 flex items-center justify-between text-xs text-eco-400 font-semibold">
+                <span>Recarga Rápida &amp; Segura</span>
+                <span>Mobilidade Sustentável →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Automação e Eficiência Energética (Eficiência Inteligente) -->
+          <div class="service-card glass-card rounded-3xl overflow-hidden reveal-item flex flex-col sm:col-span-2 lg:col-span-1">
+            <div class="h-52 overflow-hidden relative group">
+              <img
+                src="assets/images/energy-automation.jpg"
+                data-src="assets/images/energy-automation.jpg"
+                alt="Sistema de monitoramento e automação de eficiência energética em residência moderna"
+                class="lazy-img w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                width="400" height="250"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+              <div class="absolute bottom-3 left-4">
+                <span class="eco-badge text-xs">Eficiência Inteligente</span>
+              </div>
+            </div>
+            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-solar-500/20 text-solar-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                </div>
+                <h3 class="font-display font-bold text-xl mb-2 text-white">Automação e Eficiência Energética</h3>
+                <p class="text-white/60 text-sm leading-relaxed">
+                  Diagnóstico completo do consumo, medição inteligente em tempo real via aplicativo, eliminação de desperdícios elétricos e automação para máxima economia.
+                </p>
+              </div>
+              <div class="pt-5 mt-5 border-t border-white/10 flex items-center justify-between text-xs text-solar-400 font-semibold">
+                <span>Monitoramento Mobile</span>
+                <span>Gestão em Tempo Real →</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-14 reveal-item">
+          <a href="#contato" id="cta-servicos-estudo" class="btn-primary">
+            Solicitar Orçamento Gratuito dos Serviços
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FORMAS DE PAGAMENTO & FINANCIAMENTO FACILITADO -->
+    <section id="pagamento" class="py-24 section-alt" aria-labelledby="pagamento-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="section-label reveal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            Financiamento Inteligente
+          </div>
+          <h2 id="pagamento-heading" class="reveal-item font-display font-black text-3xl sm:text-4xl lg:text-5xl mb-4">
+            A energia solar se paga com a <span class="text-solar-500">própria economia</span> gerada
+          </h2>
+          <p class="reveal-item text-white/60 text-base sm:text-lg">
+            Você não desembolsa valor a mais: apenas troca o boleto caro da concessionária pela parcela do seu patrimônio fotovoltaico.
+          </p>
+          <div class="section-divider mt-6 reveal-item"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+          
+          <div class="glass-card rounded-3xl p-8 reveal-item relative flex flex-col justify-between border-t-4 border-t-solar-500">
+            <div>
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-solar-500/20 text-solar-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <h3 class="font-display font-bold text-xl mb-3 text-white">Financiamento Bancário em até 84x</h3>
+              <p class="text-white/60 text-sm leading-relaxed mb-6">
+                Parcerias consolidadas com os maiores bancos do país (Santander, BV, Sicredi, Bradesco). Carência de até 120 dias para começar a pagar.
+              </p>
+            </div>
+            <ul class="space-y-2.5 text-xs text-white/70 border-t border-white/10 pt-4">
+              <li class="flex items-center gap-2">✓ Taxas especiais para energia solar</li>
+              <li class="flex items-center gap-2">✓ Parcelas que cabem na economia gerada</li>
+              <li class="flex items-center gap-2">✓ Aprovação rápida e desburocratizada</li>
+            </ul>
+          </div>
+
+          <div class="glass-card rounded-3xl p-8 reveal-item relative flex flex-col justify-between border-t-4 border-t-solar-gold bg-navy-850/80">
+            <div class="absolute -top-3.5 right-6 bg-solar-500 text-white text-[11px] font-bold uppercase tracking-wider py-1 px-3 rounded-full shadow-lg">
+              Mais Popular
+            </div>
+            <div>
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-solar-gold/20 text-solar-gold">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3 class="font-display font-bold text-xl mb-3 text-white">Financiamento Direto TRISUN</h3>
+              <p class="text-white/60 text-sm leading-relaxed mb-6">
+                Condições exclusivas negociadas diretamente com nossa diretoria, viabilizando seu projeto solar com agilidade e flexibilidade comercial.
+              </p>
+            </div>
+            <ul class="space-y-2.5 text-xs text-white/70 border-t border-white/10 pt-4">
+              <li class="flex items-center gap-2">✓ Sem burocracia bancária</li>
+              <li class="flex items-center gap-2">✓ Análise personalizada do perfil</li>
+              <li class="flex items-center gap-2">✓ Solução rápida e transparente</li>
+            </ul>
+          </div>
+
+          <div class="glass-card rounded-3xl p-8 reveal-item relative flex flex-col justify-between border-t-4 border-t-eco-500">
+            <div>
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-eco-500/20 text-eco-400">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              </div>
+              <h3 class="font-display font-bold text-xl mb-3 text-white">PIX e Cartão de Crédito</h3>
+              <p class="text-white/60 text-sm leading-relaxed mb-6">
+                Desconto à vista via PIX para o pagamento integral ou parcelamento facilitado no cartão de crédito em condições imperdíveis.
+              </p>
+            </div>
+            <ul class="space-y-2.5 text-xs text-white/70 border-t border-white/10 pt-4">
+              <li class="flex items-center gap-2">✓ Desconto diferenciado no PIX à vista</li>
+              <li class="flex items-center gap-2">✓ Até 12x no cartão de crédito</li>
+              <li class="flex items-center gap-2">✓ Início imediato do cronograma</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS E RECOMENDAÇÕES REAIS (GOOGLE 4.4 ESTRELAS) -->
+    <section id="depoimentos" class="py-24" aria-labelledby="depoimentos-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="section-label reveal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Depoimentos Reais
+          </div>
+          <h2 id="depoimentos-heading" class="reveal-item font-display font-black text-3xl sm:text-4xl lg:text-5xl mb-4">
+            Quem contratou a TRISUN <span class="text-solar-500">recomenda</span>
+          </h2>
+          <div class="reveal-item flex items-center justify-center gap-2 text-white/75 text-sm sm:text-base mb-2">
+            <span class="stars text-lg">★★★★★</span>
+            <span><strong class="text-white">4,4 estrelas</strong> no Google Reviews (27 avaliações reais)</span>
+          </div>
+          <div class="section-divider mt-6 reveal-item"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+          
+          <!-- Avaliação 1 -->
+          <article class="glass-card rounded-3xl p-7 reveal-item flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="stars text-sm">★★★★★</span>
+                <span class="text-xs text-white/40">Google Review</span>
+              </div>
+              <blockquote class="text-white/85 text-base sm:text-lg leading-relaxed mb-6 font-normal italic">
+                "Serviço muito bem feito e entrega no prazo!!"
+              </blockquote>
+            </div>
+            <div class="flex items-center gap-3.5 pt-4 border-t border-white/10">
+              <div class="w-11 h-11 rounded-full flex items-center justify-center font-display font-bold text-white bg-gradient-to-tr from-solar-500 to-solar-gold">
+                C
+              </div>
+              <div>
+                <div class="font-bold text-sm text-white">Carlos M.</div>
+                <div class="text-xs text-white/50">Cliente Residencial · São Paulo</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Avaliação 2 (Destaque) -->
+          <article class="glass-card rounded-3xl p-7 reveal-item flex flex-col justify-between border-solar-500/40 bg-solar-500/10">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="stars text-sm">★★★★★</span>
+                <span class="eco-badge text-xs">Superou Expectativas</span>
+              </div>
+              <blockquote class="text-white/95 text-base sm:text-lg leading-relaxed mb-6 font-normal italic">
+                "Resultado do equipamento instalado superou minhas expectativas Parabéns"
+              </blockquote>
+            </div>
+            <div class="flex items-center gap-3.5 pt-4 border-t border-white/10">
+              <div class="w-11 h-11 rounded-full flex items-center justify-center font-display font-bold text-white bg-gradient-to-tr from-solar-500 to-solar-400">
+                R
+              </div>
+              <div>
+                <div class="font-bold text-sm text-white">Roberto S.</div>
+                <div class="text-xs text-white/50">Cliente Residencial · São Paulo</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Avaliação 3 -->
+          <article class="glass-card rounded-3xl p-7 reveal-item flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="stars text-sm">★★★★☆</span>
+                <span class="text-xs text-white/40">Google Review</span>
+              </div>
+              <blockquote class="text-white/85 text-base sm:text-lg leading-relaxed mb-6 font-normal italic">
+                "Ótimos preços pra colocar painel solar"
+              </blockquote>
+            </div>
+            <div class="flex items-center gap-3.5 pt-4 border-t border-white/10">
+              <div class="w-11 h-11 rounded-full flex items-center justify-center font-display font-bold text-white bg-gradient-to-tr from-eco-500 to-teal-400">
+                A
+              </div>
+              <div>
+                <div class="font-bold text-sm text-white">Alexandre P.</div>
+                <div class="text-xs text-white/50">Cliente Residencial · São Paulo</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="text-center mt-12 reveal-item">
+          <a
+            href="https://www.google.com/maps/place/TRISUN+Energia+Solar/@-23.6313868,-46.650712,17z"
+            target="_blank" rel="noopener noreferrer"
+            class="btn-secondary text-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+            Ver Todas as Avaliações no Google Maps
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ (ACCORDION INTERATIVO VIA JS) -->
+    <section id="faq" class="py-24 section-alt" aria-labelledby="faq-heading">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-16">
+          <div class="section-label reveal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            Tire Suas Dúvidas
+          </div>
+          <h2 id="faq-heading" class="reveal-item font-display font-black text-3xl sm:text-4xl lg:text-5xl mb-4">
+            Perguntas <span class="text-solar-500">Frequentes</span>
+          </h2>
+          <p class="reveal-item text-white/60">Tudo o que você precisa saber para tomar a melhor decisão para o seu imóvel.</p>
+          <div class="section-divider mt-6 reveal-item"></div>
+        </div>
+
+        <div class="space-y-4">
+          
+          <div class="faq-item glass-card rounded-2xl overflow-hidden reveal-item">
+            <button class="faq-question w-full flex items-center justify-between p-6 text-left font-display font-semibold text-base sm:text-lg text-white hover:text-solar-400 transition-colors focus:outline-none" aria-expanded="false" id="faq-btn-1" aria-controls="faq-ans-1">
+              <span>Quanto posso economizar com energia solar na minha casa?</span>
+              <span class="faq-icon flex-shrink-0 ml-4 w-8 h-8 rounded-full flex items-center justify-center text-xl font-light bg-solar-500/15 text-solar-500">+</span>
+            </button>
+            <div class="faq-answer px-6" id="faq-ans-1">
+              <p class="text-white/70 text-sm sm:text-base leading-relaxed pb-6">
+                É possível economizar <strong class="text-white">até 95%</strong> do valor total da sua fatura mensal de energia elétrica. Você continuará pagando somente a taxa mínima de disponibilidade da concessionária local e a iluminação pública.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-card rounded-2xl overflow-hidden reveal-item">
+            <button class="faq-question w-full flex items-center justify-between p-6 text-left font-display font-semibold text-base sm:text-lg text-white hover:text-solar-400 transition-colors focus:outline-none" aria-expanded="false" id="faq-btn-2" aria-controls="faq-ans-2">
+              <span>Como funciona o financiamento solar?</span>
+              <span class="faq-icon flex-shrink-0 ml-4 w-8 h-8 rounded-full flex items-center justify-center text-xl font-light bg-solar-500/15 text-solar-500">+</span>
+            </button>
+            <div class="faq-answer px-6" id="faq-ans-2">
+              <p class="text-white/70 text-sm sm:text-base leading-relaxed pb-6">
+                Oferecemos financiamento bancário facilitado em <strong class="text-white">até 84 meses</strong> e também financiamento direto com a TRISUN. Na prática, o valor que você economiza na sua conta de luz é suficiente para cobrir o valor da parcela. Ao terminar de pagar, o sistema continua gerando energia gratuita por décadas.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-card rounded-2xl overflow-hidden reveal-item">
+            <button class="faq-question w-full flex items-center justify-between p-6 text-left font-display font-semibold text-base sm:text-lg text-white hover:text-solar-400 transition-colors focus:outline-none" aria-expanded="false" id="faq-btn-3" aria-controls="faq-ans-3">
+              <span>Quanto tempo dura um sistema de painéis solares?</span>
+              <span class="faq-icon flex-shrink-0 ml-4 w-8 h-8 rounded-full flex items-center justify-center text-xl font-light bg-solar-500/15 text-solar-500">+</span>
+            </button>
+            <div class="faq-answer px-6" id="faq-ans-3">
+              <p class="text-white/70 text-sm sm:text-base leading-relaxed pb-6">
+                Os módulos fotovoltaicos possuem vida útil superior a <strong class="text-white">25 anos</strong>, com garantia contratual de eficiência de geração mínima ao longo desse período. A manutenção é simples e consiste principalmente na limpeza regular para manter a máxima captação solar.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-card rounded-2xl overflow-hidden reveal-item">
+            <button class="faq-question w-full flex items-center justify-between p-6 text-left font-display font-semibold text-base sm:text-lg text-white hover:text-solar-400 transition-colors focus:outline-none" aria-expanded="false" id="faq-btn-4" aria-controls="faq-ans-4">
+              <span>A TRISUN também realiza serviços elétricos residenciais comuns?</span>
+              <span class="faq-icon flex-shrink-0 ml-4 w-8 h-8 rounded-full flex items-center justify-center text-xl font-light bg-solar-500/15 text-solar-500">+</span>
+            </button>
+            <div class="faq-answer px-6" id="faq-ans-4">
+              <p class="text-white/70 text-sm sm:text-base leading-relaxed pb-6">
+                <strong class="text-white">Sim!</strong> Somos especialistas em engenharia elétrica residencial. Realizamos adequação de quadros de distribuição, projetos de aumento de carga, instalação de carregadores Wallbox para carros elétricos e correção de fiação antiga.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO DE CONTATO COM ENVIO COMPILADO PARA WHATSAPP COM EMOJIS & UPLOAD -->
+    <section id="contato" class="py-24" aria-labelledby="contato-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="section-label reveal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Receba seu Estudo Solar Gratuito
+          </div>
+          <h2 id="contato-heading" class="reveal-item font-display font-black text-3xl sm:text-4xl lg:text-5xl mb-4">
+            Dê o primeiro passo para sua <span class="text-solar-500">independência energética</span>
+          </h2>
+          <p class="reveal-item text-white/60 text-base sm:text-lg">
+            Envie seus dados abaixo. Nossa equipe compilará um estudo completo com cálculo exato de economia, investimento e tempo de retorno.
+          </p>
+          <div class="section-divider mt-6 reveal-item"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          
+          <!-- Formulário -->
+          <div class="lg:col-span-7 reveal-item">
+            <form id="contato-form" class="glass-card rounded-3xl p-6 sm:p-10 space-y-6" novalidate aria-label="Formulário de estudo solar gratuito">
+              
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="input-nome" class="block text-sm font-semibold text-white/80 mb-2">
+                    Nome Completo <span class="text-solar-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="input-nome"
+                    name="nome"
+                    class="form-input"
+                    placeholder="Ex: João da Silva"
+                    required
+                    autocomplete="name"
+                  />
+                  <span id="err-nome" class="text-xs text-red-400 hidden mt-1">Por favor, informe seu nome.</span>
+                </div>
+
+                <div>
+                  <label for="input-telefone" class="block text-sm font-semibold text-white/80 mb-2">
+                    Telefone / WhatsApp <span class="text-solar-500">*</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="input-telefone"
+                    name="telefone"
+                    class="form-input"
+                    placeholder="(11) 99999-9999"
+                    required
+                    autocomplete="tel"
+                    maxlength="16"
+                  />
+                  <span id="err-telefone" class="text-xs text-red-400 hidden mt-1">Informe um telefone/WhatsApp válido.</span>
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="input-conta" class="block text-sm font-semibold text-white/80 mb-2">
+                    Valor Médio da Conta de Luz <span class="text-solar-500">*</span>
+                  </label>
+                  <div class="relative">
+                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-white/40 font-bold text-sm">R$</span>
+                    <input
+                      type="text"
+                      id="input-conta"
+                      name="conta"
+                      class="form-input"
+                      placeholder="0,00"
+                      style="padding-left: 2.8rem;"
+                      required
+                    />
+                  </div>
+                  <span id="err-conta" class="text-xs text-red-400 hidden mt-1">Informe o valor aproximado da conta.</span>
+                </div>
+
+                <div>
+                  <label for="input-cidade" class="block text-sm font-semibold text-white/80 mb-2">
+                    Cidade / Bairro <span class="text-solar-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="input-cidade"
+                    name="cidade"
+                    class="form-input"
+                    placeholder="Ex: São Paulo - Jabaquara"
+                    required
+                    autocomplete="address-level2"
+                  />
+                  <span id="err-cidade" class="text-xs text-red-400 hidden mt-1">Informe sua cidade ou bairro.</span>
+                </div>
+              </div>
+
+              <!-- Drag & Drop de Upload da Conta de Energia -->
+              <div>
+                <label class="block text-sm font-semibold text-white/80 mb-2">
+                  Anexar Fatura de Energia (Opcional, acelera o estudo)
+                </label>
+                <div
+                  id="upload-zone"
+                  class="upload-zone p-6 sm:p-8 text-center"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Área de upload de fatura de luz. Arraste ou clique para enviar">
+                  
+                  <input
+                    type="file"
+                    id="input-arquivo"
+                    name="arquivo"
+                    accept=".pdf,image/*"
+                    class="hidden"
+                    aria-hidden="true"
+                  />
+
+                  <div id="upload-placeholder">
+                    <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-3 bg-solar-500/15 text-solar-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                    </div>
+                    <p class="text-white/80 text-sm font-semibold mb-1">
+                      Arraste sua fatura aqui ou <span class="text-solar-400 underline">clique para selecionar</span>
+                    </p>
+                    <p class="text-white/40 text-xs">Formatos aceitos: PDF, JPG, PNG até 15MB</p>
+                  </div>
+
+                  <div id="upload-success" class="hidden">
+                    <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-3 bg-eco-500/20 text-eco-400">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <p id="upload-filename" class="text-white font-bold text-sm"></p>
+                    <p class="text-eco-400 text-xs mt-1">Fatura anexada com sucesso!</p>
+                    <button type="button" id="btn-remover-arquivo" class="text-white/50 text-xs underline mt-2 hover:text-red-400">Remover arquivo</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Botões de Ação do Formulário -->
+              <div class="space-y-3 pt-2">
+                <button
+                  type="submit"
+                  id="btn-submit"
+                  class="btn-primary w-full justify-center text-base py-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  Receber Estudo Gratuito e Enviar no WhatsApp
+                </button>
+
+                <p class="text-center text-white/40 text-xs">
+                  🔒 Seus dados estão 100% seguros e serão utilizados exclusivamente para a elaboração do seu estudo solar.
+                </p>
+              </div>
+
+              <!-- Feedback de Sucesso -->
+              <div id="form-success" class="hidden rounded-2xl p-6 text-center bg-eco-500/15 border border-eco-500/30" role="alert">
+                <div class="text-3xl mb-2">🎉 ☀️</div>
+                <h3 class="font-display font-bold text-lg text-white mb-1">Dados compilados com sucesso!</h3>
+                <p class="text-white/70 text-sm mb-3">
+                  Abrindo o WhatsApp com a mensagem compilada e formatada com emojis...
+                </p>
+                <a id="link-whatsapp-manual" href="#" target="_blank" class="btn-whatsapp text-xs py-2 px-4 inline-flex">
+                  Clique aqui se o WhatsApp não abrir automaticamente
+                </a>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Informações de Contato & Mapa -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <div class="glass-card rounded-3xl p-6 sm:p-8 reveal-item">
+              <h3 class="font-display font-bold text-xl mb-6 text-white flex items-center gap-2">
+                <span class="text-solar-500">📍</span> Dados de Atendimento
+              </h3>
+
+              <div class="space-y-6">
+                
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0 bg-solar-500/20 text-solar-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div>
+                    <div class="text-xs uppercase tracking-wider text-white/40 font-bold mb-1">Endereço da Sede</div>
+                    <div class="text-white/90 text-sm font-medium leading-relaxed">
+                      R. Arapuã, 195 - sala 2<br/>
+                      Parque Jabaquara, São Paulo - SP<br/>
+                      CEP: 04307-070
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0 bg-eco-500/20 text-eco-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </div>
+                  <div>
+                    <div class="text-xs uppercase tracking-wider text-white/40 font-bold mb-1">Telefone / WhatsApp</div>
+                    <a href="tel:+5511927001485" class="text-white hover:text-solar-400 text-base font-bold transition-colors">
+                      (11) 92700-1485
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0 bg-tech-500/20 text-tech-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                  </div>
+                  <div>
+                    <div class="text-xs uppercase tracking-wider text-white/40 font-bold mb-1">Instagram Oficial</div>
+                    <a href="https://www.instagram.com/trisunenergia/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-solar-400 text-sm font-semibold transition-colors">
+                      @trisunenergia
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="mt-8 pt-6 border-t border-white/10">
+                <a
+                  href="https://wa.me/5511927001485?text=Ol%C3%A1!%20Gostaria%20de%20um%20estudo%20solar%20gratuito."
+                  target="_blank" rel="noopener noreferrer"
+                  class="btn-whatsapp w-full justify-center text-sm py-3.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  Conversar no WhatsApp Agora
+                </a>
+              </div>
+            </div>
+
+            <!-- Google Maps Embed -->
+            <div class="glass-card rounded-3xl overflow-hidden reveal-item">
+              <iframe
+                title="Localização da TRISUN Inteligência Solar no Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9034!2d-46.650712!3d-23.6313868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b8c83fefc35%3A0xde3a27dba1e1294e!2sTRISUN%20Energia%20Solar!5e0!3m2!1spt-BR!2sbr!4v1696000000000!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="260"
+                style="border:0;filter:invert(90%) hue-rotate(180deg) brightness(0.85) contrast(0.9);"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-16 border-t border-white/10" style="background:#040F28;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Logo e Sobre no Footer com Contraste Perfeito e Cores Preservadas -->
+        <div class="md:col-span-5 space-y-5">
+          <a href="#inicio" aria-label="TRISUN Inteligência Solar">
+            <div class="brand-logo-badge-footer">
+              <img
+                src="assets/images/logo-trisun.png"
+                alt="Logo TRISUN Inteligência Solar"
+                class="h-20 sm:h-24 w-auto object-contain"
+                width="240" height="240"
+                loading="lazy"
+              />
+            </div>
+          </a>
+          <p class="text-white/60 text-sm leading-relaxed max-w-sm">
+            Transformando a luz do sol em economia sustentável e protegendo o futuro do planeta com projetos fotovoltaicos inteligentes e serviços elétricos de alta performance.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.instagram.com/trisunenergia/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl flex items-center justify-center bg-white/5 hover:bg-white/10 hover:text-solar-400 text-white/70 border border-white/10 transition-all" aria-label="Instagram TRISUN">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://wa.me/5511927001485" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl flex items-center justify-center bg-white/5 hover:bg-white/10 hover:text-eco-400 text-white/70 border border-white/10 transition-all" aria-label="WhatsApp TRISUN">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links Rápidos -->
+        <div class="md:col-span-3 space-y-3">
+          <div class="font-display font-bold text-sm uppercase tracking-wider text-solar-400 mb-4">Navegação Rápida</div>
+          <ul class="space-y-2.5 text-sm text-white/60">
+            <li><a href="#inicio" class="hover:text-white transition-colors">Início</a></li>
+            <li><a href="#sobre" class="hover:text-white transition-colors">Sobre a Empresa</a></li>
+            <li><a href="#servicos" class="hover:text-white transition-colors">Nossos Serviços</a></li>
+            <li><a href="#pagamento" class="hover:text-white transition-colors">Formas de Pagamento</a></li>
+            <li><a href="#depoimentos" class="hover:text-white transition-colors">Depoimentos no Google</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">Perguntas Frequentes</a></li>
+            <li><a href="#contato" class="hover:text-white transition-colors">Solicitar Estudo Solar</a></li>
+          </ul>
+        </div>
+
+        <!-- Serviços Rápidos -->
+        <div class="md:col-span-4 space-y-3">
+          <div class="font-display font-bold text-sm uppercase tracking-wider text-solar-400 mb-4">Soluções TRISUN</div>
+          <ul class="space-y-2.5 text-sm text-white/60">
+            <li>Sistemas Fotovoltaicos Residenciais</li>
+            <li>Manutenção e Limpeza de Painéis</li>
+            <li>Projetos e Aumentos de Carga Elétrica</li>
+            <li>Carregadores Wallbox para Veículos Elétricos</li>
+            <li>Automação e Diagnóstico de Consumo</li>
+            <li class="pt-2 text-white/40 text-xs">Atendimento em toda Grande São Paulo e Região</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/40 gap-4">
+        <div>
+          © 2026 TRISUN Inteligência Solar. Todos os direitos reservados.
+        </div>
+        <div>
+          Desenvolvido com excelência técnica, sustentabilidade e inovação.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT: LAZY LOAD, ANIMAÇÕES NO SCROLL, CONTADORES E ENVIO WHATSAPP COM EMOJIS -->
+  <script>
+    // 1. Barra de progresso de rolagem e Header dinâmico
+    const scrollBar = document.getElementById('scroll-progress-bar');
+    const header = document.getElementById('header');
+
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+      scrollBar.style.width = scrolled + '%';
+
+      if (winScroll > 60) {
+        header.style.background = 'rgba(4, 15, 40, 0.95)';
+        header.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.5)';
+        header.style.paddingTop = '0.5rem';
+        header.style.paddingBottom = '0.5rem';
+      } else {
+        header.style.background = 'rgba(8, 20, 50, 0.85)';
+        header.style.boxShadow = 'none';
+        header.style.paddingTop = '0.75rem';
+        header.style.paddingBottom = '0.75rem';
+      }
+    }, { passive: true });
+
+    // 2. Menu Mobile
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+    let menuAberto = false;
+
+    mobileMenuBtn.addEventListener('click', () => {
+      menuAberto = !menuAberto;
+      mobileMenu.classList.toggle('open', menuAberto);
+      iconOpen.classList.toggle('hidden', menuAberto);
+      iconClose.classList.toggle('hidden', !menuAberto);
+      mobileMenuBtn.setAttribute('aria-expanded', String(menuAberto));
+    });
+
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuAberto = false;
+        mobileMenu.classList.remove('open');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // 3. Lazy Load de Imagens via JavaScript (IntersectionObserver)
+    const lazyImgs = document.querySelectorAll('.lazy-img');
+    const lazyObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          const src = img.getAttribute('data-src');
+          if (src) {
+            img.src = src;
+          }
+          img.classList.add('loaded');
+          obs.unobserve(img);
+        }
+      });
+    }, { rootMargin: '150px 0px 150px 0px' });
+    lazyImgs.forEach(img => lazyObserver.observe(img));
+
+    // 4. Animações de Scroll Reveal dos Elementos da Página
+    const revealItems = document.querySelectorAll('.reveal-item');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, idx) => {
+        if (entry.isIntersecting) {
+          // Adiciona leve atraso baseado na ordem para efeito de cascata
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, (idx % 4) * 80);
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    revealItems.forEach(item => revealObserver.observe(item));
+
+    // 5. Contadores Numéricos Animados no Scroll
+    const countUpEls = document.querySelectorAll('.count-up');
+    let countersIniciados = false;
+
+    const countObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !countersIniciados) {
+          countersIniciados = true;
+          countUpEls.forEach(el => {
+            const target = parseFloat(el.getAttribute('data-target'));
+            const decimals = parseInt(el.getAttribute('data-decimals') || '0');
+            const duration = 2000;
+            const startTime = performance.now();
+
+            function animateCount(now) {
+              const elapsed = now - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+              // Easing easeOutQuart
+              const ease = 1 - Math.pow(1 - progress, 4);
+              const current = target * ease;
+              el.textContent = current.toFixed(decimals);
+
+              if (progress < 1) {
+                requestAnimationFrame(animateCount);
+              } else {
+                el.textContent = target.toFixed(decimals);
+              }
+            }
+            requestAnimationFrame(animateCount);
+          });
+          countObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const statsSection = document.getElementById('sobre');
+    if (statsSection) countObserver.observe(statsSection);
+
+    // 6. Acordeão de FAQ Interativo
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const btn = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+
+      btn.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(other => {
+          other.classList.remove('open');
+          other.querySelector('.faq-answer').classList.remove('open');
+          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          answer.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      btn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          btn.click();
+        }
+      });
+    });
+
+    // 7. Upload com Drag & Drop e Tratamento de Arquivo
+    const uploadZone = document.getElementById('upload-zone');
+    const inputArquivo = document.getElementById('input-arquivo');
+    const uploadPlaceholder = document.getElementById('upload-placeholder');
+    const uploadSuccess = document.getElementById('upload-success');
+    const uploadFilename = document.getElementById('upload-filename');
+    const btnRemoverArquivo = document.getElementById('btn-remover-arquivo');
+    let arquivoSelecionadoNome = '';
+
+    function processarArquivo(file) {
+      if (!file) return;
+      const validTypes = ['application/pdf', 'image/jpeg', 'image/jpg', 'image/png'];
+      const isValid = validTypes.some(t => file.type === t || file.type.startsWith('image/'));
+      if (!isValid) {
+        alert('Por favor, selecione um arquivo em formato PDF, JPG ou PNG.');
+        return;
+      }
+      arquivoSelecionadoNome = file.name;
+      uploadPlaceholder.classList.add('hidden');
+      uploadSuccess.classList.remove('hidden');
+      uploadFilename.textContent = file.name;
+    }
+
+    uploadZone.addEventListener('click', (e) => {
+      if (e.target !== btnRemoverArquivo) {
+        inputArquivo.click();
+      }
+    });
+
+    uploadZone.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        inputArquivo.click();
+      }
+    });
+
+    inputArquivo.addEventListener('change', (e) => {
+      processarArquivo(e.target.files[0]);
+    });
+
+    uploadZone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      uploadZone.classList.add('drag-over');
+    });
+
+    uploadZone.addEventListener('dragleave', () => {
+      uploadZone.classList.remove('drag-over');
+    });
+
+    uploadZone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      uploadZone.classList.remove('drag-over');
+      if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+        processarArquivo(e.dataTransfer.files[0]);
+      }
+    });
+
+    btnRemoverArquivo.addEventListener('click', (e) => {
+      e.stopPropagation();
+      inputArquivo.value = '';
+      arquivoSelecionadoNome = '';
+      uploadPlaceholder.classList.remove('hidden');
+      uploadSuccess.classList.add('hidden');
+    });
+
+    // 8. Máscara de Telefone em Tempo Real
+    const inputTelefone = document.getElementById('input-telefone');
+    inputTelefone.addEventListener('input', (e) => {
+      let v = e.target.value.replace(/\D/g, '');
+      if (v.length > 11) v = v.substring(0, 11);
+      if (v.length <= 10) {
+        v = v.replace(/^(\d{2})(\d{4})(\d{0,4})$/, '($1) $2-$3');
+      } else {
+        v = v.replace(/^(\d{2})(\d{5})(\d{0,4})$/, '($1) $2-$3');
+      }
+      e.target.value = v;
+    });
+
+    // 9. Máscara de Moeda (R$) em Tempo Real
+    const inputConta = document.getElementById('input-conta');
+    inputConta.addEventListener('input', (e) => {
+      let v = e.target.value.replace(/\D/g, '');
+      if (!v) {
+        e.target.value = '';
+        return;
+      }
+      const num = parseInt(v, 10) / 100;
+      e.target.value = num.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    });
+
+    // 10. Envio Compilado para WhatsApp Contemplando Emojis
+    const form = document.getElementById('contato-form');
+    const btnSubmit = document.getElementById('btn-submit');
+    const formSuccess = document.getElementById('form-success');
+    const linkWhatsAppManual = document.getElementById('link-whatsapp-manual');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const nome = document.getElementById('input-nome').value.trim();
+      const telefone = document.getElementById('input-telefone').value.trim();
+      const conta = document.getElementById('input-conta').value.trim();
+      const cidade = document.getElementById('input-cidade').value.trim();
+
+      // Validação visual individual
+      let isValid = true;
+
+      const campos = [
+        { id: 'input-nome', errId: 'err-nome', val: nome },
+        { id: 'input-telefone', errId: 'err-telefone', val: telefone, minLen: 14 },
+        { id: 'input-conta', errId: 'err-conta', val: conta },
+        { id: 'input-cidade', errId: 'err-cidade', val: cidade }
+      ];
+
+      campos.forEach(c => {
+        const inputEl = document.getElementById(c.id);
+        const errEl = document.getElementById(c.errId);
+        const invalido = !c.val || (c.minLen && c.val.length < c.minLen);
+
+        if (invalido) {
+          isValid = false;
+          inputEl.classList.add('border-red-500');
+          if (errEl) errEl.classList.remove('hidden');
+          inputEl.addEventListener('input', () => {
+            inputEl.classList.remove('border-red-500');
+            if (errEl) errEl.classList.add('hidden');
+          }, { once: true });
+        }
+      });
+
+      if (!isValid) return;
+
+      // Montagem da mensagem compilada rica em emojis
+      const infoFatura = arquivoSelecionadoNome
+        ? `📎 Fatura anexada no envio: *${arquivoSelecionadoNome}*`
+        : `📝 Fatura não anexada (informações declaradas acima)`;
+
+      const mensagemWhatsApp = 
+`☀️ *SOLICITAÇÃO DE ESTUDO SOLAR - TRISUN* ☀️
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+👤 *Nome do Cliente:* ${nome}
+📱 *Telefone/WhatsApp:* ${telefone}
+💰 *Valor Médio da Conta:* R$ ${conta}
+📍 *Localização:* ${cidade}
+📄 *Fatura de Luz:* ${infoFatura}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚡ *Objetivo:* Economizar até 95% na conta de luz!
+🌱 *Compromisso:* Sustentabilidade & Alta Performance
+
+💬 Olá equipe da TRISUN Inteligência Solar! Preenchi o formulário no site e gostaria de receber meu estudo solar personalizado gratuito.`;
+
+      const urlWhatsApp = `https://wa.me/5511927001485?text=${encodeURIComponent(mensagemWhatsApp)}`;
+
+      // Feedback visual e loading
+      btnSubmit.disabled = true;
+      btnSubmit.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="animate-spin"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+        Gerando Estudo e Redirecionando...
+      `;
+
+      setTimeout(() => {
+        formSuccess.classList.remove('hidden');
+        linkWhatsAppManual.href = urlWhatsApp;
+        btnSubmit.classList.add('hidden');
+        formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+        // Abre o WhatsApp com a mensagem compilada
+        window.open(urlWhatsApp, '_blank');
+      }, 1200);
+    });
+
+    // 11. Destaque de link ativo no scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${id}`) {
+              link.style.color = '#F25A13';
+            } else {
+              link.style.color = '';
+            }
+          });
+        }
+      });
+    }, { threshold: 0.35 });
+    sections.forEach(s => navObserver.observe(s));
+  </script>
+</body>
+</html>
