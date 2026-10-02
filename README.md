@@ -20,6 +20,7 @@
 - [🚀 Publicação e Deploy](#-publicação-e-deploy)
 - [🔒 Segurança & Boas Práticas](#-segurança--boas-práticas)
 - [🏢 Dados Institucionais](#-dados-institucionais)
+- [Autoria](#-autoria)
 - [📄 Licença](#-licença)
 
 ---
